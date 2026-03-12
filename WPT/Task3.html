@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Click Events</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+
+        <p>This is Paragraph</p>
+        <div>This is div</div>
+
+        <script>
+            $(document).ready(function(){
+
+                $("*").click(function(){
+                    alert("Single Click Event.");
+                });
+
+                $("*").dblclick(function(){
+                    alert("Double Click Event.");
+                });
+            });
+        </script>
+
+    </body>
+</html>
